@@ -31,7 +31,7 @@
 
 ### Pasos para Ejecutar el Proyecto
 
-1. **Clonar el repositorio**:
+1. **Clonar el repositorio e ingresar a la carpeta**:
    ```bash
    git clone https://github.com/FelipeJuaneda/challengue-futbol.git
    cd challengue-futbol
@@ -39,6 +39,7 @@
  2. **Ejecutar la aplicación con Docker**:
       ```bash
       docker-compose up --build
+      
 -La aplicación estará disponible en http://localhost:3000.
 
   3. **Ejecutar la aplicación con Docker**:
