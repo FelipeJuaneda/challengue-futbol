@@ -42,8 +42,10 @@
       
 -La aplicación estará disponible en http://localhost:3000.
 
-  3. **Ejecutar la aplicación con Docker**:
+  3. **Ejecutar la aplicación sin Docker**:
      ```bash
+       npm install
        npm run dev
+     
 -La aplicación estará disponible en http://localhost:3000.
 
