@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ATC Dream Match
 
-## Getting Started
+## Introducción
 
-First, run the development server:
+**ATC Dream Match** es una web app desarrollada para el desafío de **Alquila tu Cancha**, en la que los usuarios pueden crear "El partido de tus sueños", un enfrentamiento de fútbol 5 entre sus 10 jugadores favoritos. La aplicación es responsive, tanto para escritorio como para dispositivos móviles.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionalidades Implementadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Bienvenida al usuario**: La app ofrece una pantalla de bienvenida amigable.
+- **Listar equipos creados**: Los usuarios pueden ver una lista de los equipos que han creado.
+- **Crear equipos**: Los usuarios pueden crear hasta dos equipos, asignándoles nombres y editándolos si es necesario.
+- **Eliminar equipos**: Los usuarios pueden eliminar equipos creados.
+- **Restricciones de equipo**: La aplicación impide la creación de más de dos equipos y asegura que cada equipo tenga exactamente 5 jugadores.
+- **Detalle de equipos**: Muestra el listado de jugadores vinculados a cada equipo.
+- **Vincular jugadores a equipos**: Los usuarios pueden vincular jugadores a un equipo desde una lista de jugadores obtenida de la API de [API Football](https://apifootball.com/documentation/).
+- **Visualización gráfica**: La app comunica gráficamente cuando ambos equipos están formados y completos.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tecnologías Utilizadas
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Next.js con TypeScript**: Framework utilizado para construir la aplicación web.
+- **Tailwind CSS**: Utilizado para el diseño y estilo de la aplicación.
+- **Docker**: Para la contenedorización de la aplicación y facilitar su despliegue.
+- **Git**: Para el control de versiones.
 
-## Learn More
+## Instrucciones para Levantar el Proyecto
 
-To learn more about Next.js, take a look at the following resources:
+### Requisitos Previos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Docker instalado en tu máquina
+- Node.js y npm instalados
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Pasos para Ejecutar el Proyecto
 
-## Deploy on Vercel
+1. **Clonar el repositorio**:
+   ```bash
+   git clone https://github.com/FelipeJuaneda/challengue-futbol.git
+   cd challengue-futbol
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+ 2. **Ejecutar la aplicación con Docker**:
+      ```bash
+      docker-compose up --build
+-La aplicación estará disponible en http://localhost:3000.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  3. **Ejecutar la aplicación con Docker**:
+     ```bash
+       npm run dev
+-La aplicación estará disponible en http://localhost:3000.
+
